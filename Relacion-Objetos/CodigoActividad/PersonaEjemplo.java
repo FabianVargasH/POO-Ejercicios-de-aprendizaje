@@ -1,8 +1,8 @@
-public class Persona {
+public class PersonaEjemplo {
 
     private Calculadora calculadora;
 
-    public Persona() {
+    public PersonaEjemplo() {
         calculadora = new Calculadora();
     }
 

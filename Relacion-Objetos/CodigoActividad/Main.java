@@ -2,7 +2,7 @@ import java.io.*;
 public class Main {
     public static void main(String[] args)throws IOException{
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
-                Persona persona = new Persona();
+                PersonaEjemplo persona = new PersonaEjemplo();
 
         System.out.println("Cantidad de datos a ingresar (1, 2 o 3): ");
         int cantidad = Integer.parseInt(entrada.readLine());
