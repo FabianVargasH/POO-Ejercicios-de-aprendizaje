@@ -1,4 +1,5 @@
-# 📚 Repositorio Académico — Programación Orientada a Objetos
+# 📚 Repositorio Académico — Programación Orientada a Objetos <img width="91" height="110" alt="Logo Cenfotec Actual (1)" src="https://github.com/user-attachments/assets/25f78b76-2ad9-4294-8f2f-1605c22b17c5" />
+
 
 > Repositorio académico destinado al almacenamiento y seguimiento de todos los trabajos, ejercicios y actividades cotidianas realizadas durante el curso de **Programación Orientada a Objetos (POO)**.
 
