@@ -1,14 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        // Crear las figuras con valores directos
-        Rectangulo rectangulo = new Rectangulo(5.0, 3.0);
-        Circulo circulo = new Circulo(4.0);
+
+        Circulo miCirculo = new Circulo(7);
+        Rectangulo miRectangulo = new Rectangulo(13, 8);
+        Figura[] misFiguras = new Figura[10]; //Ligado Dinamico (Polimorfismo)
+
+        System.out.println(miCirculo.calcularArea());
+
+        misFiguras[0] =  miCirculo;
+        misFiguras[1] = miRectangulo;
+
+        for(int i = 0; i <= 2;i++){
+            System.out.println(misFiguras[i].calcularArea());
+        }
+
         
-        // Mostrar resultados
-        System.out.println("Area del rectángulo: " + rectangulo.calcularArea());
-        System.out.println("Perímetro del rectángulo: " + rectangulo.calcularPerimetro());
-        
-        System.out.println("Area del círculo: " + circulo.calcularArea());
-        System.out.println("Perímetro del círculo: " + circulo.calcularPerimetro());
     }
 }

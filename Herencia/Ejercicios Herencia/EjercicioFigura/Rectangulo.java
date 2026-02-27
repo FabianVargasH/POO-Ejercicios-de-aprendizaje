@@ -1,44 +1,38 @@
 public class Rectangulo extends Figura {
-    private double base;
-    private double altura;
-    
-    public Rectangulo(double base, double altura) {
-        super(); 
-        this.nombre = "Rectángulo";
-        this.base = base;
-        this.altura = altura;
+
+    private double largo;
+    private double ancho;
+
+    public Rectangulo(double largo, double ancho){
+        this.largo = largo;
+        this.ancho = ancho;
+    }
+
+    public double getLargo(){
+        return largo;
     }
     
-    public double calcularArea() {
-        return base * altura;
+    public void setLargo(double radio){
+        this.largo = largo;
     }
     
-    public double calcularPerimetro() {
-        return 2 * (base + altura);
+    public void setAncho(double ancho) {
+        this.ancho = ancho;
     }
-    
-    public void mostrarInformacion() {
-        System.out.println("=== RECTÁNGULO ===");
-        System.out.println("Base: " + base);
-        System.out.println("Altura: " + altura);
-        System.out.println("Área: " + calcularArea());
-        System.out.println("Perímetro: " + calcularPerimetro());
+
+    public double calcularArea(){
+        return largo * ancho;
     }
-    
-    // Getters y Setters
-    public double getBase() {
-        return base;
+
+    public double calcularPerimetro(){
+        return 2 * (largo + ancho);
     }
-    
-    public void setBase(double base) {
-        this.base = base;
+
+    public String toString(){
+        return "Soy un rectangulo de area" + calcularArea() + " y de perimetro: " + calcularPerimetro();
     }
-    
-    public double getAltura() {
-        return altura;
-    }
-    
-    public void setAltura(double altura) {
-        this.altura = altura;
+
+    public boolean equals(Rectangulo rectanguloComparar){
+         return largo == rectanguloComparar.largo && ancho == rectanguloComparar.ancho;
     }
 }
