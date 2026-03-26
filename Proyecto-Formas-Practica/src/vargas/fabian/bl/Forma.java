@@ -1,4 +1,8 @@
 package vargas.fabian.bl;
 
-public class Forma {
+public interface Forma {
+    double calcularPerimetro();
+    double calcularArea();
+    void imprimirInformacion();
+
 }
